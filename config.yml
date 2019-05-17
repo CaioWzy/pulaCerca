@@ -21,7 +21,7 @@ comment_stickied: true
 comment: |
     #[Não consegue abrir a notícia? Leia aqui.](https://outline.com/{{url}})
     
-    Apoie o jornalismo brasileiro, [assine o jornal](https://github.com/CaioWzy/pulaCerca/assine/?origem={{url}}).  
+    Apoie o jornalismo brasileiro, [assine o jornal](https://caiowzy.github.io/pulaCerca/assine?origem={{url}}).  
     [^(Código-fonte)](https://github.com/CaioWzy/pulaCerca/)
 action_reason: automoderator-pulaCerca
 
@@ -38,7 +38,7 @@ comment_stickied: true
 comment: |
     #[Não consegue abrir a notícia? Leia aqui.](https://archive.today/?run=1&url={{url}})
     
-    Apoie o jornalismo brasileiro, [assine o jornal](https://github.com/CaioWzy/pulaCerca/assine/?origem={{url}}).  
+    Apoie o jornalismo brasileiro, [assine o jornal](https://caiowzy.github.io/pulaCerca/assine?origem={{url}}).  
     [^(Código-fonte)](https://github.com/CaioWzy/pulaCerca/)
 action_reason: automoderator-pulaCerca
 
