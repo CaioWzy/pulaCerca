@@ -1,7 +1,7 @@
-#pulaCerca
+# pulaCerca
 Gera links para o acesso alternativo ao conteúdo das notícias protegidas por paywall simples.
 
-#Como usar
+# Como usar
 Simplesmente copie e cole o conteúdo do arquivo `config.yml` na configuração do AutoModerator.
 
 # Sites suportados
