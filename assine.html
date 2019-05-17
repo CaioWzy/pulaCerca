@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <title>Redirecionando...</title>
+</head>
+<body>
+    <noscript>
+        <p>Preciso do Javascript ativado para te redirecionar à página de assinatura.</p>
+    </noscript>
+    <script type="text/javascript">
+        const JORNAIS = [
+            {
+                "nome": "BR18",
+                "dominio": /br18.com.br/,
+                "assine_url": "https://assine.estadao.com.br/"
+            },
+            {
+                "nome": "Correio Popular",
+                "dominio": /correio.rac.com.br/,
+                "assine_url": "http://www.assinecorreio.com.br/"
+            },
+            {
+                "nome": "Estadão",
+                "dominio": /estadao.com.br/,
+                "assine_url": "https://assine.estadao.com.br/"
+            },
+            {
+                "nome": "Exame",
+                "dominio": /exame.abril.com.br/,
+                "assine_url": "https://www.assine.abril.com.br/portal/assinar/revista-exame/"
+            },
+            {
+                "nome": "Folha de São Paulo",
+                "dominio": /folha.uol.com.br/,
+                "assine_url": "https://secure.folha.com.br/folha?gid=FOL"
+            },
+            {
+                "nome": "Gaúcha ZH",
+                "dominio": /gauchazh.clicrbs.com.br/,
+                "assine_url": "https://pagamento.clicrbs.com.br/oferta/15017/identifique-se/"
+            },
+            {
+                "nome": "Gazeta do Povo",
+                "dominio": /gazetadopovo.com.br/,
+                "assine_url": "https://assinaturas.gazetadopovo.com.br/promo/digital-nacional-099-bth/"
+            },
+            {
+                "nome": "Nexo Jornal",
+                "dominio": /nexojornal.com.br/,
+                "assine_url": "https://www.nexojornal.com.br/assine/"
+            },
+            {
+                "nome": "O Globo",
+                "dominio": /oglobo.globo.com/,
+                "assine_url": "https://assinatura.oglobo.globo.com/VitrineDigital.aspx?id_parc=6235&cod_vitrine=112"
+            },
+            {
+                "nome": "Superinteressante",
+                "dominio": /super.abril.com.br/,
+                "assine_url": "https://www.assine.abril.com.br/portal/assinar/revista-superinteressante/"
+            },
+            {
+                "nome": "UOL",
+                "dominio": /uol.com.br/,
+                "assine_url": "https://assine.uol.com.br/"
+            },
+            {
+                "nome": "Veja",
+                "dominio": /veja.abril.com.br/,
+                "assine_url": "https://www.assine.abril.com.br/portal/assinar/revista-veja/"
+            }
+        ]
+        origem = getParameterByName("origem");
+        if (!!origem) {
+            JORNAIS.some((jornal) => {
+                if (jornal.dominio.test(origem)) {
+                    window.location.replace(jornal.assine_url);
+                    return true;
+                }
+            });
+        }
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+# Início automoderator-pulaCerca
+
+---
+
+# Outline:
+
+type: link submission
+url (regex): [
+                '(.*br18.com.br*)',
+                '(.*correio.rac.com.br*)', # Correio Popular
+                '(.*estadao.com.br*)', 
+                '(.*exame.abril.com.br*)',
+                '(.*folha.uol.com.br*)',
+                '(.*gazetadopovo.com.br*)', 
+                '(.*oglobo.globo.com*)',
+                '(.*super.abril.com.br*)', # Superinteressante
+                '(.*uol.com.br*)',
+                '(.*veja.abril.com.br*)'
+             ]
+comment_stickied: true
+comment: |
+    #[Não consegue abrir a notícia? Leia aqui.](https://outline.com/{{url}})
+    
+    Apoie o jornalismo brasileiro, [assine o jornal](https://github.com/CaioWzy/pulaCerca/assine/?origem={{url}}).  
+    [^(Código-fonte)](https://github.com/CaioWzy/pulaCerca/)
+action_reason: automoderator-pulaCerca
+
+---
+
+# Archive.today:
+
+type: link submission
+url (regex): [
+                '(.*gauchazh.clicrbs.com.br*)',
+                '(.*nexojornal.com.br*)'
+             ]
+comment_stickied: true
+comment: |
+    #[Não consegue abrir a notícia? Leia aqui.](https://archive.today/?run=1&url={{url}})
+    
+    Apoie o jornalismo brasileiro, [assine o jornal](https://github.com/CaioWzy/pulaCerca/assine/?origem={{url}}).  
+    [^(Código-fonte)](https://github.com/CaioWzy/pulaCerca/)
+action_reason: automoderator-pulaCerca
+
+---
+
+# Repositório: https://github.com/CaioWzy/pulaCerca
+# Última atualização: 17/05/19
+
+# Fim automoderator-pulaCerca
